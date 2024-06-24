@@ -9,9 +9,15 @@ namespace TestWinFormsC_
             InitializeComponent();
 
             Personne personne;
-            personne = new Personne("Elfassy", "Eden");
-            string nom_prenom = personne.renvoyer_nom_complet();
+            personne = new Personne("Elfassy", "Eden", 12);
 
+            personne.Age = 1000;
+            
+            int AgePersonne = personne.Age;
+
+            Personne personne_deux = new Personne("Elfassy", "David", 90);
+
+            int NombreDePersonnesInstanciées = Personne.NombrePersonnes;
         }
 
         private void button1_Click(object sender, EventArgs e)

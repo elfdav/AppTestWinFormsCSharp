@@ -15,19 +15,42 @@ namespace TestWinFormsC_.Classes
         private int telephone;
         #endregion Champs
 
+        #region Properties
+        public int Age
+        {
+            get { return age; }
+            set
+            {
+                if (value > 120)
+                    value = 100;
+
+                age = value;
+            }
+        }
+
+        private static int nombrePersonnes = 0;
+        public static int NombrePersonnes
+        {
+            get { return nombrePersonnes; }
+        }
+        #endregion Properties
+
         #region Constructors
         public Personne()
         {
         }
-        public Personne(string Nom, string Prenom)
+        public Personne(string Nom, string Prenom, int Age)
         {
             this.nom = Nom;
             this.prenom = Prenom;
+            this.age = Age;
+            nombrePersonnes++;
         }
         public Personne(Personne p)
         {
             this.nom = p.nom;
             this.prenom = p.prenom;
+            this.age = p.age;  
         }
         #endregion Constructors
 
