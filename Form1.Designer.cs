@@ -1,4 +1,4 @@
-﻿namespace TestWinFormsC_
+﻿namespace TestWinFormsCSharp
 {
     partial class Form1
     {
@@ -33,22 +33,24 @@
             // 
             // button1
             // 
-            button1.Location = new Point(299, 307);
+            button1.Location = new Point(262, 230);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(178, 54);
+            button1.Size = new Size(156, 40);
             button1.TabIndex = 0;
             button1.Text = "button1";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(button1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 

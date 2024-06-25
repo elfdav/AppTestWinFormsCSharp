@@ -1,4 +1,4 @@
-namespace TestWinFormsC_
+namespace TestWinFormsCSharp
 {
     internal static class Program
     {
