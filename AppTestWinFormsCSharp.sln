@@ -5,6 +5,11 @@ VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppTestWinFormsCSharp", "AppTestWinFormsCSharp.csproj", "{CE68C9DE-257C-4E10-B3C8-1CE1CE5B6366}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Éléments de solution", "Éléments de solution", "{4E7A0910-4847-4382-B05D-5ADFB559A9FD}"
+	ProjectSection(SolutionItems) = preProject
+		Memo.txt = Memo.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
